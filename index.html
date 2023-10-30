@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indentificador de sons</title>
+
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js"> </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"> </script>
+<link rel="stylesheet" type="text/css"  href="style.css">
+</head>
+<body>
+    <div class="col-xs-12 header_div text-center">
+        <h1>
+            Animais legais
+        </h1>
+        <p>
+           faça barulhos como de animais (leão, cachorro e gato)
+        </p>
+    </div>
+    <div class="main_div">
+<center>
+    <br>
+    <button class="btn btn-success" onclick="startClassification();">
+        Iniciar
+    </button>
+    <h3 id="result_label">
+        Posso ouvir
+    </h3>
+    <h4 id="result_confidence"> Precisão</h4>
+<br>
+
+<img src="cachorro.jpg" id="cachorro" width="200" height="200">
+<img src="leao.jpg" id="leao" width="200" height="200">
+<img src="gato.jpg" id="gato" width="200" height="200"
+</center>
+    </div>
+    <div class="copy_right_footer">
+Desevolvido por - Francisco Pelegrini
+    </div>
+    <script src="main.js">
+
+    </script>
+</body>
+</html>
